@@ -1,7 +1,10 @@
 # Implementation Plan: [FEATURE]
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
+**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]  
 **Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
+
+> ⚠️ **Constitution Principle V**: This entire document MUST be written in Traditional Chinese
+> (zh-TW). File paths, identifiers, code blocks, and schema keys MAY remain in English.
 
 **Note**: This template is filled in by the `/speckit.plan` command. See `.specify/templates/plan-template.md` for the execution workflow.
 
@@ -31,7 +34,15 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+| # | Principle | Gate Question | Status |
+|---|-----------|---------------|--------|
+| I | Code Quality | Are linting/formatting rules configured and enforced in CI? Are all public interfaces documented? | ☐ |
+| II | Test-First Standards | Are tests planned before implementation? Are unit, integration, and contract test locations identified? Is coverage threshold (≥ 80 %) tracked? | ☐ |
+| III | UX Consistency | Do all API responses follow the canonical `{ data, error, meta }` envelope? Are error messages actionable and user-facing? Is domain terminology consistent with the spec? | ☐ |
+| IV | Performance Requirements | Are latency targets defined for every operation touching retrieval or generation? Are performance benchmarks included in the test plan? | ☐ |
+| V | Documentation Language Standard | Is this plan document written in Traditional Chinese (zh-TW)? Are all task descriptions and narrative in zh-TW? | ☐ |
+
+> Any ☐ that cannot be checked MUST be documented in **Complexity Tracking** below with justification.
 
 ## Project Structure
 

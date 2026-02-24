@@ -1,6 +1,7 @@
 {
     "chat.promptFilesRecommendations": {
         "speckit.constitution": true,
+        "speckit.clarify": true,   
         "speckit.specify": true,
         "speckit.plan": true,
         "speckit.tasks": true,

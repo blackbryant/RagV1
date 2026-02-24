@@ -5,6 +5,9 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+> ⚠️ **Constitution Principle V**: This entire document MUST be written in Traditional Chinese
+> (zh-TW). Code blocks, API field names, schema keys, and file paths MAY remain in English.
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--
@@ -94,6 +97,23 @@
 
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
 - **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
+
+### Non-Functional Requirements *(mandatory — Constitution Principles III & IV)*
+
+<!--
+  ACTION REQUIRED: Fill these for every feature that touches an API surface or
+  latency-sensitive path. Leaving these blank is a constitution violation.
+-->
+
+#### UX Consistency (Principle III)
+- **NFR-UX-001**: All API responses MUST use the canonical `{ data, error, meta }` envelope.
+- **NFR-UX-002**: Error messages exposed to users MUST be [describe expected plain-language format].
+- **NFR-UX-003**: Domain terms used in this feature (list them): [term1, term2, …]
+
+#### Performance (Principle IV)
+- **NFR-PERF-001**: [Operation name] p50 MUST be ≤ [X ms] and p95 MUST be ≤ [Y ms].
+- **NFR-PERF-002**: [Operation name] p50 MUST be ≤ [X ms] and p95 MUST be ≤ [Y ms].
+- **NFR-PERF-003**: Memory ceiling for this feature's workload: [X MB / NEEDS CLARIFICATION].
 
 ### Key Entities *(include if feature involves data)*
 
